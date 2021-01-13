@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy: connect-src *; default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"/>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <div id="nameGame">
+            <h1>Tron</h1>
+            <h2>Deux joueurs</h2>
+            <br/>
+        </div>
+        <div id="playGame">
+            <div id="title">
+                <div id="div-pseudo">
+                    <br/>
+                    <p>Entrez votre pseudo pour lancer la partie :</p>
+                    <label for="pseudo">Pseudo : </label>
+                    <input type="text" name="pseudo" id="pseudo"> 
+                    <span id="valider-pseudo"> Jouer ! </span>
+                    <p id="MsgValidation"></p>
+                </div> 
+                <br/>
+                <div id="instructionsClassement">
+                    <p>Consultez le classement des meilleurs joueurs : </p>
+                    <span id="buttonHighScore">  Voir classement  </span>
+                </div>
+                <br/><br/><br/><br/><br/>
+                <div id="rules">
+                    <h2><u>Regles du jeu</u> :</h2>
+                    <p>Dans ce jeu à 2 joueurs, bloquez votre adversaire contre un mur afin qu'il perde.</p>
+                    <p>Vous pouvez le bloquer contre le mur que vous laissez derrière vous, ou contre les bords du plateau.</p>
+                    <p>Soyez le dernier survivant pour remporter la partie !</p>
+                </div>
+
+            </div>
+
+            <div id="attenteAdversaire">     
+                <div id="loader"></div>
+                <div id="attente"></div>
+                <span id="backMenu">
+                    <p>En attente d'adversaire</p>
+                    <a href="index.html"> <span id="buttonBack">  Retour au menu  </span></a>
+                </span>
+            </div>
+
+            <div id="attenteCommencer">
+                <p id="att"></p>
+                <p id="seconde"></p>
+            </div>
+            
+            <div id="partieEnCours">
+                <p id="identifiantsJoueurs"></p>
+                <p id="resultat"></p>
+                <div id="backToTheMenu">
+                    <a href="index.html"> <span id="buttonBack">  Retour  </span></a>
+                </div>
+                <p></p>
+            </div>
+
+        </div>
+
+
+        <div id="highScore">
+            <span id="backToMenu">
+                <!--<a href="index.html"> <input type="button" value="Retour"></a>-->
+                <a href="index.html"> <span id="buttonBack">  Retour au menu  </span></a>
+            </span>
+            <br/>
+            <p></p>
+
+        </div>
+
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script src="js/p5.min.js"></script>
+        <script src="js/playground.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/index.js"></script>
+        <script src="cordova.js"></script>
+        
+    </body>
+</html>

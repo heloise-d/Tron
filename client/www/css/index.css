@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'FuturisticFont';
+    src: url('../font/FuturisticArmour.otf');
+}
+
+@font-face{
+    font-family: 'zekton';
+    src:url('../font/zekton.ttf')
+}
+
+
+
+body {
+    background-image: url("../img/futurist3.jpg");
+    background-color: black;
+    color:white;
+    font-family: 'zekton';
+}
+
+h1 {
+    font-size:60px;
+    font-weight:normal;
+    font-family: 'FuturisticFont';
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+h2 {
+    font-family: 'FuturisticFont';
+    font-size: 20px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+#valider-pseudo, #buttonHighScore, #buttonBack {
+    border:1px solid white;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+#valider-pseudo:hover, #buttonHighScore:hover, #buttonBack:hover {
+    border:1px solid white;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+#rules {
+    font-size: 12px;
+    border:1px solid white;
+    max-width:650px;
+    margin : 0 auto;
+}
+
+#highScore {
+    display: none;
+    text-align: center;
+    margin:auto 0;
+}
+
+#backMenu {
+    display: none;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#backToMenu{
+    text-align: center;
+}
+
+#backToTheMenu {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+}
+
+#resultat, #seconde {
+    text-align: center;
+}
+
+#identifiantsJoueurs {
+    text-align: center;
+    font-size: 12px;
+}
+
+#MsgValidation{
+    color:red;
+}
+
+#buttonUp, #buttonDown {
+    font-size: 35px;
+    text-align: center;
+    display: table;
+    margin:0 auto;
+    padding:0px;
+    font-weight: bold;
+}
+
+#att {
+    text-align: center;
+}
+
+#buttonRight, #buttonLeft {
+    font-size: 35px;
+    padding:0px;
+    margin:0 auto;
+    font-weight: bold;
+}
+
+#buttonUp:hover, #buttonDown:hover, #buttonRight:hover, #buttonLeft:hover {
+    color:darkblue;
+    cursor: pointer;
+}
